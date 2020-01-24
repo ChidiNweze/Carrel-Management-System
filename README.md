@@ -1,5 +1,5 @@
 # Carrel-Management-System
-A system to book desks in Dana Porter Library during peak times such as midterms and finals. Built with Django.
+A system (built with Django) to book desks in Dana Porter Library during peak times such as midterms and finals. 
 
 # Motivation
 
