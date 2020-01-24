@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="wrap">
+    <form action="" method="post">
+        {% csrf_token %}
+      <div class="fields"> First Name <br><br> {{ form.first_name }}</div>
+      <div class="fields"> Last Name <br><br> {{ form.last_name }}</div>
+      <div class="fields"> Student ID <br><br> {{ form.student_ID }}</div>
+      <div class="fields"> Program {{ form.Program }}</div>
+      <div class="fields"> Gender {{ form.gender }}</div>
+      <input class="button-custom" type="submit" value="DONE">
+    </form>
+  </div>
+{% endblock content %}
+
+
+{% block more_links %}
+    <a href="{% url 'edit' %}">
+            Update Details
+        </a>
+        <a href="{% url 'select' %}">
+            Select a Carrel
+        </a>
+        <a href="{% url 'logout' %}">
+            Logout
+        </a>
+{% endblock more_links %}
